@@ -3,8 +3,8 @@ import streamlit as st
 import re
 
 # Load the spam model and vectorizer
-spam_model = pickle.load(open('/content/Spam_Model.sav', 'rb'))
-vectorizer = pickle.load(open('/content/Vectorizer.sav', 'rb'))
+spam_model = pickle.load(open('Spam_Model.sav', 'rb'))
+vectorizer = pickle.load(open('Vectorizer.sav', 'rb'))
 
 st.title("Spam Message Detection Web App")
 st.write("Enter a message to detect if it's spam or not")
